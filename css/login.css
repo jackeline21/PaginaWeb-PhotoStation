@@ -1,0 +1,225 @@
+:root {
+    /* Fuentes */
+    --TituloPrincipal: 'Fjalla One', sans-serif;
+    --SansGruesa2: 'Wendy One', sans-serif;
+    --TituloSecundario: 'Fjalla One', sans-serif;
+    --Texto: 'Roboto Slab', serif;
+    --CursivaPrincipal: 'Lobster Two', cursive;
+    --CursivaPrincipal2: 'Pattaya', sans-serif;
+    --CursivaSecundaria: 'Dancing Script', cursive;
+
+    /* Colores*/
+    --Primario: #ffa45c; 
+    --PrimarioCeleste:#3bb4c1;
+    --CeleteOscuro: #048998; 
+    --Secundario: #e9e4e6;  
+    --Salmon: #ffcdab;
+    --Claro: #fff4e3;  
+    --PrimarioAzul: #022c43;
+    --Amarillo: #ffd700;
+    --Blanco: #ffffff;
+}
+html {
+    box-sizing: border-box;
+     /* Tamaño base para la fuente a 10px */
+     font-size: 62.5%;
+}
+*,*:before, *:after {
+    box-sizing: inherit;
+}
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.overLay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: -1;
+}
+body{
+    font-family: var(--TituloSecundario);
+    background-image: url(/img/AereaLogin.jpg);
+    margin: 0 auto 0 auto;  
+    width:100%; 
+    text-align:center;
+    margin: 10rem 0 10rem 0;   
+    line-height: 2;
+  }
+img{
+    max-width: 100%;
+    height: auto;
+}
+p{
+    font-size:2rem;
+    font-family: var(--Texto);
+    color: var(--Blanco);
+
+}
+p a {
+    text-decoration: none;
+}
+p a span{
+    color: var(--Amarillo);
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  
+  h1{
+    font-size: 3rem;
+    color: var(--Blanco);
+    font-family: var(--TituloPrincipal);
+  }
+  
+  .box{
+    background-color: rgba(4, 137, 152, .2) ;
+    width:600px;
+    border-radius:6px;
+    margin: 0 auto 0 auto;
+    padding:0px 0px 10rem 0px;
+    border: 2px solid var(--Blanco); 
+  }
+  .label{
+    font-size: 2rem;
+  }
+  .email{
+    background: var(--Blanco);
+    border: none;
+    padding: 1rem;
+    width:30rem;
+    color:#5d5d5a;
+    margin-top:10px;
+    font-size:1.5rem;
+    border-radius:4px;
+  }
+  
+  .password{
+    z-index: 1;
+    border-radius:10px;
+    background: var(--Blanco);
+    border: none;
+    padding: 8px;
+    width:30rem;
+    font-size:1em;
+  }
+  
+  .btn{
+    background: var(--CeleteOscuro);
+    width:10rem;
+    margin-top: 3rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    color:var(--Blanco);
+    border-radius:4px;
+    border: none;
+    
+    margin-top:20px;
+    margin-bottom:20px;
+    float:left;
+    margin-left:16px;
+    font-weight:800;
+    font-size:1.5rem;
+  }
+  
+  .btn:hover{
+    background:var(--Amarillo); 
+  }
+  
+  #btn2{
+    background: var(--CeleteOscuro);
+    width:10rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    color:var(--Blanco);
+    border-radius:4px;
+    border: none;
+    
+    margin-top:2rem;
+    margin-bottom:20px;
+    float:left;
+    margin-left:16px;
+    font-weight:800;
+    font-size:1.5rem;
+  }
+  
+  #btn2:hover{ 
+    background:var(--Amarillo); ; 
+  }
+  /*
+  @media(max-width:768px) {
+    
+    .menu {
+        width: 45%;
+        height: 50%;
+        left: -100%;
+        top: -5%;
+        max-width: 1200px;
+        color: var(--Amarillo);
+        background: rgba(17, 81, 115, .8);
+        position: fixed;
+    
+        margin-top: 10rem;
+        z-index: 999;
+    
+    }  
+    .menu ul {
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        position: none;
+        margin-top: 0;
+        display: block;
+        margin-left: 0rem;
+    }
+    .menu ul li {
+        
+        float: none;
+        border-bottom: 1px solid rgba(255,255,255, .3);
+    }
+    .menu ul li a {
+        font-family: var(--TituloPrincipal);
+        padding: 0;
+        color: #ffffff;
+        text-decoration: none;
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+    .menu ul li a span i {
+        padding-right: 1rem; 
+    }
+    .botonMenu {
+        display: block;
+        width: 100%;
+        background: transparent;
+        margin-top: -98%;
+        margin-bottom: 0;
+        z-index: 10;
+        
+    }
+    .botonMenu .btnMenu {
+        display:block;
+        padding: 2rem;
+        color:var(--PrimarioCeleste);
+        text-decoration:none;
+        font-weight: bold;
+        font-size:2rem;
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        box-sizing:border-box;
+        margin-top: 2rem;
+        
+    }
+    .botonMenu span {
+        float:center;
+        font-size:4rem;
+    }
+    .btnMenu:hover {
+        color:var(--Amarillo);
+    }
+}*/

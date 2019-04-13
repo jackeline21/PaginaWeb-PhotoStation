@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="author" content="Jackeline Varela" />
+  <meta name="description" content="Pagina Web sobre Fotografía" />
+  <meta name="keywords" content="fotografia, camaras, tips-de-fotografia, top-fotografia" />
+  <meta />
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Dancing+Script:700|Fjalla+One|Lobster+Two|Roboto+Slab|Pattaya|Wendy+One"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>CapturaMomentos</title>
+</head>
+
+<body>
+  <!--La pagina principal cuenta con un video como background que abarca odo el ancho y alto de la pantalla y sobre el cual se mostrará el menu y contenido principal-->
+  <header>
+    <div class="timeLapse">
+      <!--El video es un timelapse que se reproducrirá automáticamente al ingresar a la página y una vez que éste termine, se volverá a reporoducir mediante la propiedad: loop-->
+      <video src="/ideas/playbak01.mp4" type="video/mp4" width="100%" height="100%" autoplay
+        muted loop></video>
+    </div>
+    <div class="overLay"></div>
+    <div class="contenido-principal">
+      <h1>Ph<i class="fas fa-camera"></i>to<span>Station</span></h1>
+      <h3>Encuentra tu Fotógrafo favorito <br> Mira sus trabajos <br> ¡CONTRÁTALO!
+      </h3>
+      <button class="boton" style="vertical-align:middle">
+        <span> <a href="#">EXPLORAR</a></span>
+      </button>
+    </div>
+
+    <div class="botonMenu">
+      <!--El menú de navegación funciona mediante un script que lo hará responsive-->
+      <a href="#" class="btnMenu"><span><i class="fas fa-bars"></i></span></a>
+    </div>
+  
+    <nav class="menu"> 
+      <ul>
+        <li><a href="index.html"> <span><i class="fas fa-home"></i></span> Inicio</a></li>
+        <li><a href="explorar.html" ><span><i class="fas fa-search"></i></span> Explorar</a></li>
+        <li><a href="explorar.html" ><span><i class="fas fa-user-lock"></i></span>Iniciar Sesion</a></li>
+        <li><a href="error.html"><span><i class="fas fa-trophy"></i></span>Concursos</a></li>
+        <li><a href="contactanos.html"><span><i class="fas fa-home"></i></span>Contáctanos</a></li>
+      </ul>
+    </nav>
+    
+    <!--En este caso sólo se muestra las redes sociales en el footer para que no
+    se vea tan cargado, la información restante irá en el acerca de nosotros-->
+    <footer class="footer-sitio " >
+      <div class="contenedor clearfix" >
+        <section class="redes" >
+          <nav>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <p class="copyright">Todos los derechos reservados 2019 &copy;</p>
+          </nav>
+      </div>
+      
+    </footer>
+  </header>
+  
+    <!--Scripts que se van a  ejecutar-->
+  <script
+  src="https://code.jquery.com/jquery-3.4.0.min.js"
+  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+  crossorigin="anonymous"></script>
+
+  <script src="/scripts/menu.js"></script>
+    
+
+</body>
+
+</html>

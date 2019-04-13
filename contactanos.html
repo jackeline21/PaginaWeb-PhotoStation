@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Jackeline Varela" />
+    <meta name="description" content="Pagina Web sobre Fotografía" />
+    <meta name="keywords" content="fotografia, camaras, tips-de-fotografia, top-fotografia" />
+    <meta />
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Dancing+Script:700|Fjalla+One|Lobster+Two|Roboto+Slab|Pattaya|Wendy+One"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styleExplora.css" />
+    <title>Explorar</title>
+</head>
+<body>
+    <header>
+        <div class="botonMenu">
+            <!--El menú de navegación funciona mediante un script que lo hará responsive-->
+            <a href="#" class="btnMenu"><span> <i class="fas fa-bars"></i></span> </a>
+        </div>
+        <nav class="menu"> 
+            <ul>
+                <li><a href="index.html"> <span><i class="fas fa-home"></i></span> Inicio</a></li>
+                <li><a href="explorar.html" ><span><i class="fas fa-search"></i></span> Explorar</a></li>
+                <li><a href="login.html"><span><i class="fas fa-user-lock"></i></span>Iniciar Sesión</a></li>
+                <li><a href="error.html"><span><i class="fas fa-trophy"></i></span>Concursos</a></li>
+                <li><a href="contactanos.html"><span><i class="fas fa-address-card"></i></span>Contáctanos</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <div class="buscar">
+        <input type="text">
+        <label for="text"><i class="fas fa-search-location"></i>Buscar</label>
+    </div>
+    <main>
+        <!-- Contenedor grid -->
+        <div class="TemasPlaneta contenedor">
+            <div class="tema">
+                <img src="img/Jackeline.jpeg" alt="Calentamiento Global" />
+                <h1>Jackeline Varela</h1>
+                <p class="titulo">Estudiante de Ingienería en Ciencias de la Computación <br>
+                    UNICAH-2019</p>
+            </div>
+      
+            <div class="texto">
+                <h1>¿Quiénes somos?</h1>
+                <p> Fusce dapibus porta nibh, eu aliquam velit pharetra non. Sed ut blandit velit. Aenean molestie mi sagittis massa gravida tristique. Ut facilisis condimentum odio eget tempor. Pellentesque gravida leo vitae ultrices porttitor. Integer pretium erat metus, vel commodo elit maximus sed. Etiam sodales consectetur posuere. Suspendisse eu feugiat ante.
+        </div>
+        <div class="tema">
+            <img src="img/fotoQuique.JPG" alt="producto" style="width:100%" />
+            <h1>Foto Quique Digital</h1>
+            <div class="contenidoTema">
+              <p class="titulo">Suspendisse consectetur euismod posuere.</p>
+              <!--<button class="hollow button" href="#">Primary</button>-->
+            </div>
+        </div>
+    </main>
+          
+    <!--En este caso sólo se muestra las redes sociales en el footer para que no
+    se vea tan cargado, la información restante irá en el acerca de nosotros-->
+    <footer class="footer-sitio " >
+        <div class="contenedor clearfix" >
+          <section class="redes" >
+            <nav>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+              <p class="copyright">Todos los derechos reservados 2019 &copy;</p>
+            </nav>
+        </div>
+        
+      </footer>
+    </header>
+    <!--Scripts que se van a  ejecutar-->
+    <script
+    src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+    crossorigin="anonymous"></script>
+
+    <script src="/scripts/menu.js"></script>
+
+    
+</body>
+</html>

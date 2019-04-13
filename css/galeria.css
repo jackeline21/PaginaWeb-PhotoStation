@@ -1,0 +1,46 @@
+:root {
+    /* Fuentes */
+    --TituloPrincipal: 'Fjalla One', sans-serif;
+    --SansGruesa2: 'Wendy One', sans-serif;
+    --TituloSecundario: 'Fjalla One', sans-serif;
+    --Texto: 'Roboto Slab', serif;
+    --CursivaPrincipal: 'Lobster Two', cursive;
+    --CursivaPrincipal2: 'Pattaya', sans-serif;
+    --CursivaSecundaria: 'Dancing Script', cursive;
+
+    /* Colores*/
+    --Primario: #ffa45c; 
+    --PrimarioCeleste:#3bb4c1;
+    --CeleteOscuro: #048998; 
+    --Secundario: #e9e4e6;  
+    --Salmon: #ffcdab;
+    --CasiBlanco: #f6f5f5;
+    --Claro: #fff4e3;  
+    --PrimarioAzul: #022c43;
+    --Amarillo: #ffd700;
+    --Blanco: #ffffff;
+}
+h1 {
+    text-align: center;
+    color: var(--Blanco);
+    background: var(--CeleteOscuro);
+    margin-top: -1rem;
+    font-size: 10rem;
+}
+h1:hover {
+    color: var(--Amarillo);
+}
+h2{
+    margin: 5rem;
+    text-align: center;
+    color: var(--PrimarioAzul);
+    margin-top: -3rem;
+}
+.galeria a i {
+    font-size: 6rem;
+    margin: 5rem;
+    color: var(--Primario);
+}
+.galeria a i:hover {
+    color: var(--PrimarioAzul);
+}
